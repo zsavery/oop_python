@@ -2,20 +2,22 @@
 
 ## What is a Class?
 
-Defines properties and behaviors of objects. The properties and functions of a class can have diffrent levelrs of access. 
+Defines properties and behaviors of objects. The properties and functions of a class can have diffrent levelrs of access.
     - Public: Open to use. You do not need to create an object of said class to have access functions or properties that contain this object modifier.
     - Protected: A familiy event. Only the class and its desendants have access to the properties and methods.
     - Private: Only the class has access to properties and methods.
+
+---
 
 ## Objects
 
 Contain the properties and behaviors defined in their class. Objects are stored red in memory and their properties can contain their unique from their class.
 
-
-
 ### Class Definition
 
 When creating a class you need a **constructor** which define the properties of a class.
+
+---
 
 ### Dog Class
 
@@ -33,6 +35,8 @@ Dog
 - Bark Sound: `str`
 - Mood: `str`
 - Has Owner: `bool`
+
+---
 
 #### Python Implementation
 
@@ -78,6 +82,8 @@ class Dog:
         self.has_owner = ho
 ```
 
+---
+
 #### Table
 
 |Name|Breed|Size|Fur Type|Fur Color|Bark Sound|Mood|Has Owner|
@@ -85,5 +91,3 @@ class Dog:
 |Fido|Whippet|3|Soft/Short|Tan|Fido_bark.mpp3|Hyper|T|
 |Husker|NaN|NaN|NaN|NaN|NaN|NaN|NaN|
 |Philip|NaN|NaN|NaN|NaN|NaN|NaN|NaN|
-
-
