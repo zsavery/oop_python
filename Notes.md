@@ -4,7 +4,9 @@
 
 Contain the properties and behaviors defined in their class. Objects are stored red in memory and their properties can contain their unique from their class.
 
-## Class Definition
+## Classes
+
+### Class Definition
 
 When creating a class you need a **constructor** which define the properties of a class.
 
@@ -76,3 +78,5 @@ class Dog:
 |Fido|Whippet|3|Soft/Short|Tan|Fido_bark.mpp3|Hyper|T|
 |Husker|NaN|NaN|NaN|NaN|NaN|NaN|NaN|
 |Philip|NaN|NaN|NaN|NaN|NaN|NaN|NaN|
+
+
