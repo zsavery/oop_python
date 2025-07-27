@@ -7,38 +7,43 @@ class VideoGameCharacter:
             self._skills = skills
             self._items_capacity = items_capacity
             self._position = position
-    
-    def set_name(self, n):
-          self._name = n
 
     @property
     def name(self):
           return self._name
     
-    def set_level(self, l):
-          self._level = l
+    @name.setter
+    def name(self, n):
+          self._name = n
 
     @property
     def level(self):
           return self._level
     
-    def set_skills(self, lst):
-          self._skills = lst
+    @level.setter
+    def level(self, l):
+          self._level = l
 
     @property
     def skills(self):
           return self._skills
     
-    def set_items_capacity(self, cap):
-          self._level = cap
+    @skills.setter
+    def skills(self, lst):
+          self._skills = lst
 
     @property
     def items_capacity(self):
           return self._items_capacity
     
-    def set_position(self, pos):
-          self._level = pos
+    @items_capacity.setter
+    def items_capacity(self, cap):
+          self._level = cap
 
     @property
     def position(self):
           return self._position
+    
+    @position.setter
+    def position(self, pos):
+          self._level = pos
