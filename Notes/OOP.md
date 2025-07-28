@@ -71,7 +71,7 @@ print(my_car.make)
 print(my_car._speed)
 
 # Try to access private attribute (fails)
-# print(my_car.__engine_temp)  # ❌ AttributeError
+# print(my_car.__engine_temp)  # AttributeError
 
 # Correct way to access private attribute (via method)
 print("Engine temp:", my_car.get_engine_temp())
