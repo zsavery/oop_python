@@ -2,10 +2,23 @@
 
 ## What is a Class?
 
-Defines properties and behaviors of objects. The properties and functions of a class can have diffrent levelrs of access.
-    - Public: Open to use. You do not need to create an object of said class to have access functions or properties that contain this object modifier.
-    - Protected: A familiy event. Only the class and its desendants have access to the properties and methods.
-    - Private: Only the class has access to properties and methods.
+Defines properties and behaviors of objects. The properties and functions of a class can have different levels of access.
+
+**Public**: Open to use. You do not need to create an object of said class to have access functions or properties that contain this object modifier.
+
+```python
+class SandwhichMaker: 
+    def make_sub(self, lst):
+        print("Here is a sub with all your toppings: ", end=" ")
+        for item in lst:
+            print(item, end=" ")
+        print()
+
+if '__name__' == '__main__':
+    SandwhichMaker.make_sub("Cheese", "Ham")
+```
+**Protected**: A familiy event. Only the class and its desendants have access to the properties and methods.
+**Private**: Only the class has access to properties and methods.
 
 ---
 
@@ -22,6 +35,7 @@ Contain the properties and behaviors defined in their class. Objects are stored 
 ## Varibles
 
 **Class Variables**: Variables *shared* by all objects that share a class.
+
 **Instance/Object Variable**: Variables unique to each object.
 
 ---
@@ -73,7 +87,21 @@ class Dog:
 
 ```python
 class Dog:
-    def __init__(self, n, b, s, ft, fc, bs, m:, ho):
+    def __init__(self, n, b, s, ft, fc, bs, m, ho):
+        self.name = n
+        self.breed = b
+        self.size = s
+        self.fur_type = ft
+        self.fur_color = fc
+        self.bark_sound = bs # file path
+        self.mood = m
+        self.has_owner = ho
+```
+
+```python
+class Dog:
+    def __init__(self, n = 'NA', b = 'NA', s = 0, ft = 'NA', 
+                fc = 'NA', bs = 'NA', m = 'NA', ho = False):
         self.name = n
         self.breed = b
         self.size = s
@@ -97,7 +125,6 @@ class Dog:
         self.mood = m
         self.has_owner = ho
 ```
-
 ---
 
 #### Table
@@ -141,7 +168,7 @@ class Person:
     def __init__(self, name:str):
         self._name = name
 
-    @propery
+    @property
     def name(self):
         return self._name
 
