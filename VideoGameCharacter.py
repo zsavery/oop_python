@@ -87,7 +87,7 @@ class Warrior(VideoGameCharacter):
     Step 2.2
     - Implement move method in `TestVideoGameCharacter.py`
     """
-    def move(self, distance):
+    def move(self, distance=6):
         return f"Run {distance} feet."
     
     """Step 3.2
@@ -107,7 +107,7 @@ class Wizard(VideoGameCharacter):
     Step 2.2
     - Implement move method in `TestVideoGameCharacter.py`.
     """
-    def move(self, distance):
+    def move(self, distance=10):
         return f"Teleport {distance} feet."
     
     """Step 3.3
