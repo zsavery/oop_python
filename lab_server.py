@@ -19,7 +19,7 @@ class Server:
                 print(f"Received from {client_address}: {data}")
                 # Echo back the received message to the client
                 client_socket.sendall(data.encode(self.server_format))
-            if data == "exit()":
+            if data == "server -d":
                 break
         print("Server exited. 3 2 1")
 

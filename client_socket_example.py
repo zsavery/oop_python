@@ -8,14 +8,28 @@ host = input('Enter inet ip address: ')# '127.0.0.1' # Localhost
 port = 5541 # Arbitrary non-privileged port
 format = 'utf-8'
 
-# Bind to the port
-client_socket.bind((host, port))
+# Connect to the port
+client_socket.connect((host, port))
 
-# Receive message from server
-message = client_socket.recv(1024)
+print("Start client.")
+while True:
+    # Receive message from server
+    message = input("Enter message (or 'quit' to quit): ")
+    if message.lower == 'quit':
+        break
 
-# print the received message
-print(message.decode(format))
+    client_socket.sendall(message.encode(format))
+
+    # Response 
+    response = client_socket.recv(1024)
+    decoded_msg = response.decode(format)
+    
+
+    # print the received message
+    print(decoded_msg)
+
+print("Exit client.")
+
 
 # close connection
 client_socket.close()
