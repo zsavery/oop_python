@@ -15,7 +15,7 @@ print("Start client.")
 while True:
     # Receive message from server
     message = input("Enter message (or 'quit' to quit): ")
-    if message.lower == 'quit':
+    if message.lower() == 'quit':
         break
 
     client_socket.sendall(message.encode(format))
