@@ -5,7 +5,7 @@ server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Define host and port
 host = '127.0.0.1' # Localhost
-port = 34412 # Arbitrary non-privileged port
+port = 5541 # Arbitrary non-privileged port
 
 # Bind to the port
 server_socket.bind((host, port))
