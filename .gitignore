@@ -184,3 +184,5 @@ cython_debug/
 worktrees/
 */.git
 */.gitignore
+.truck
+.hidden/
